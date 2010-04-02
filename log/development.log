@@ -1,0 +1,107 @@
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (128.2ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (63.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateLyrics (20100331054253)
+  [4;36;1mSQL (108.7ms)[0m   [0;1mCREATE TABLE "lyrics" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "artist" varchar(255), "album" varchar(255), "year" varchar(255), "lyrics" text, "image_url" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (94.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100331054253')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("lyrics")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-30 22:44:16) [GET]
+
+
+ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/luke/lyricmesh/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-03-30 22:44:20) [GET]
+  [4;36;1mLyric Load (0.5ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://myserver.localhost/lyrics]
+
+
+Processing LyricsController#new (for 127.0.0.1 at 2010-03-30 22:44:29) [GET]
+Rendering template within layouts/lyrics
+Rendering lyrics/new
+Completed in 22ms (View: 12, DB: 0) | 200 OK [http://myserver.localhost/lyrics/new]
+
+
+Processing LyricsController#create (for 127.0.0.1 at 2010-03-30 22:45:20) [POST]
+  Parameters: {"commit"=>"Create", "lyric"=>{"lyrics"=>"One Thing, I don't know why", "artist"=>"Evenescence", "image_url"=>"www.spoofknock.com", "title"=>"Come all Ye Faithful", "album"=>"Come Laddy", "year"=>"388"}, "authenticity_token"=>"18fb795101cb7b2bc5a7f77381be4097127e89f7"}
+  [4;35;1mLyric Create (0.5ms)[0m   [0mINSERT INTO "lyrics" ("artist", "lyrics", "created_at", "title", "image_url", "updated_at", "album", "year") VALUES('Evenescence', 'One Thing, I don''t know why', '2010-03-31 05:45:20', 'Come all Ye Faithful', 'www.spoofknock.com', '2010-03-31 05:45:20', 'Come Laddy', '388')[0m
+Redirected to #<Lyric:0xb6f0ece8>
+Completed in 89ms (DB: 0) | 302 Found [http://myserver.localhost/lyrics]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-03-30 22:45:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mLyric Load (0.4ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 1) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 16ms (View: 6, DB: 0) | 200 OK [http://myserver.localhost/lyrics/1]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-03-30 22:45:24) [GET]
+  [4;35;1mLyric Load (0.6ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://myserver.localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-03-31 12:32:49) [GET]
+  [4;36;1mLyric Load (0.6ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 18ms (View: 11, DB: 1) | 200 OK [http://myserver.localhost/lyrics]
