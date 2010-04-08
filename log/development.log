@@ -2350,3 +2350,10 @@ Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 19:19:16) [GET]
 Rendering template within layouts/lyrics
 Rendering lyrics/index
 Completed in 58ms (View: 45, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-08 14:04:09) [GET]
+  [4;36;1mLyric Load (1.6ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 55ms (View: 42, DB: 2) | 200 OK [http://localhost/lyrics]
