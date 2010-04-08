@@ -105,3 +105,2248 @@ Processing LyricsController#index (for 127.0.0.1 at 2010-03-31 12:32:49) [GET]
 Rendering template within layouts/lyrics
 Rendering lyrics/index
 Completed in 18ms (View: 11, DB: 1) | 200 OK [http://myserver.localhost/lyrics]
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2010-04-01 15:36:42) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/lyrics_controller.rb:1
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.0ms)
+Rendered rescues/_request_and_response (2.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2010-04-01 15:36:51) [GET]
+
+ActionController::RoutingError (No route matches "/lyric" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2010-04-01 15:36:54) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/lyrics_controller.rb:1
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2010-04-01 15:37:53) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/lyrics_controller.rb:1
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (142.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:43:25) [GET]
+  [4;36;1mLyric Load (1.7ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 55ms (View: 33, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#new (for 127.0.0.1 at 2010-04-01 15:43:37) [GET]
+Rendering template within layouts/lyrics
+Rendering lyrics/new
+Completed in 48ms (View: 28, DB: 0) | 200 OK [http://localhost/lyrics/new]
+
+
+Processing LyricsController#create (for 127.0.0.1 at 2010-04-01 15:46:37) [POST]
+  Parameters: {"commit"=>"Create", "lyric"=>{"lyrics"=>"Psychic spies from China\r\nTry to steal your mind's elation\r\nLittle girls from Sweden\r\nDream of silver screen quotations\r\nAnd if you want these kind of dreams\r\nIt's Californication\r\n\r\nIt's the edge of the world\r\nAnd all of western civilization\r\nThe sun may rise in the East\r\nAt least it settles in the final location\r\nIt's understood that Hollywood\r\nsells Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nCelebrity skin is this your chin\r\nOr is that war your waging\r\n\r\n[Chorus:]\r\nFirst born unicorn\r\nHard core soft porn\r\nDream of Californication\r\nDream of Californication\r\n\r\nMarry me girl be my fairy to the world\r\nBe my very own constellation\r\nA teenage bride with a baby inside\r\nGetting high on information\r\nAnd buy me a star on the boulevard\r\nIt's Californication\r\n\r\nSpace may be the final frontier\r\nBut it's made in a Hollywood basement\r\nCobain can you hear the spheres\r\nSinging songs off station to station\r\nAnd Alderon's not far away\r\nIt's Californication\r\n\r\nBorn and raised by those who praise\r\nControl of population everybody's been there\r\nand\r\nI don't mean on vacation\r\n\r\n[Chorus]\r\n\r\nDestruction leads to a very rough road\r\nBut it also breeds creation\r\nAnd earthquakes are to a girl's guitar\r\nThey're just another good vibration\r\nAnd tidal waves couldn't save the world\r\nFrom Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nSicker than the rest\r\nThere is no test\r\nBut this is what you're craving\r\n\r\n[Chorus] ", "artist"=>"Red Hot Chili Peppers", "image_url"=>"", "title"=>"Californication", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081"}
+  [4;35;1mLyric Create (1.3ms)[0m   [0mINSERT INTO "lyrics" ("artist", "lyrics", "created_at", "title", "image_url", "updated_at", "album", "year") VALUES('Red Hot Chili Peppers', 'Psychic spies from China
+Try to steal your mind''s elation
+Little girls from Sweden
+Dream of silver screen quotations
+And if you want these kind of dreams
+It''s Californication
+
+It''s the edge of the world
+And all of western civilization
+The sun may rise in the East
+At least it settles in the final location
+It''s understood that Hollywood
+sells Californication
+
+Pay your surgeon very well
+To break the spell of aging
+Celebrity skin is this your chin
+Or is that war your waging
+
+[Chorus:]
+First born unicorn
+Hard core soft porn
+Dream of Californication
+Dream of Californication
+
+Marry me girl be my fairy to the world
+Be my very own constellation
+A teenage bride with a baby inside
+Getting high on information
+And buy me a star on the boulevard
+It''s Californication
+
+Space may be the final frontier
+But it''s made in a Hollywood basement
+Cobain can you hear the spheres
+Singing songs off station to station
+And Alderon''s not far away
+It''s Californication
+
+Born and raised by those who praise
+Control of population everybody''s been there
+and
+I don''t mean on vacation
+
+[Chorus]
+
+Destruction leads to a very rough road
+But it also breeds creation
+And earthquakes are to a girl''s guitar
+They''re just another good vibration
+And tidal waves couldn''t save the world
+From Californication
+
+Pay your surgeon very well
+To break the spell of aging
+Sicker than the rest
+There is no test
+But this is what you''re craving
+
+[Chorus] ', '2010-04-01 22:46:37', 'Californication', '', '2010-04-01 22:46:37', 'Californication', '1999')[0m
+Redirected to #<Lyric:0xb6d3a458>
+Completed in 102ms (DB: 1) | 302 Found [http://localhost/lyrics]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 15:46:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 35ms (View: 13, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:46:41) [GET]
+  [4;35;1mLyric Load (1.9ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 54ms (View: 36, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#destroy (for 127.0.0.1 at 2010-04-01 15:47:15) [DELETE]
+  Parameters: {"authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"1"}
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 1) [0m
+  [4;35;1mLyric Destroy (0.5ms)[0m   [0mDELETE FROM "lyrics" WHERE "id" = 1[0m
+Redirected to http://localhost:3000/lyrics
+Completed in 359ms (DB: 2) | 302 Found [http://localhost/lyrics/1]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:47:16) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 31ms (View: 19, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:50:59) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 29ms (View: 18, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:54:00) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 29ms (View: 18, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:54:02) [GET]
+  [4;35;1mLyric Load (1.1ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 29ms (View: 18, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:54:03) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 15:54:17) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLyric Load (0.7ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:54:28) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 29ms (View: 18, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:54:45) [GET]
+  [4;36;1mLyric Load (1.4ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 36ms (View: 19, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:54:46) [GET]
+  [4;35;1mLyric Load (0.9ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 28ms (View: 17, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 15:56:51) [GET]
+  [4;36;1mLyric Load (1.1ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 29ms (View: 17, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:00:49) [GET]
+
+
+Processing LyricsController#new (for 127.0.0.1 at 2010-04-01 18:00:49) [GET]
+Rendering template within layouts/lyrics
+Rendering lyrics/new
+  [4;36;1mLyric Load (1.9ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 67ms (View: 44, DB: 0) | 200 OK [http://localhost/lyrics/new]
+Completed in 84ms (View: 49, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#create (for 127.0.0.1 at 2010-04-01 18:00:51) [POST]
+  Parameters: {"commit"=>"Create", "lyric"=>{"lyrics"=>"", "artist"=>"", "image_url"=>"", "title"=>"d", "album"=>"", "year"=>""}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081"}
+  [4;35;1mLyric Create (1.2ms)[0m   [0mINSERT INTO "lyrics" ("artist", "lyrics", "created_at", "title", "image_url", "updated_at", "album", "year") VALUES('', '', '2010-04-02 01:00:51', 'd', '', '2010-04-02 01:00:51', '', '')[0m
+Redirected to #<Lyric:0xb65d7a94>
+Completed in 115ms (DB: 1) | 302 Found [http://localhost/lyrics]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:00:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mLyric Load (0.9ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 3) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 51ms (View: 12, DB: 1) | 200 OK [http://localhost/lyrics/3]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:00:54) [GET]
+  [4;35;1mLyric Load (1.8ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 72ms (View: 54, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:00:55) [GET]
+  Parameters: {"1270165460"=>nil}
+
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#destroy (for 127.0.0.1 at 2010-04-01 18:01:08) [DELETE]
+  Parameters: {"authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"3"}
+  [4;36;1mLyric Load (1.1ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 3) [0m
+  [4;35;1mLyric Destroy (0.6ms)[0m   [0mDELETE FROM "lyrics" WHERE "id" = 3[0m
+Redirected to http://localhost/lyrics
+Completed in 186ms (DB: 2) | 302 Found [http://localhost/lyrics/3]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:01:08) [GET]
+  [4;36;1mLyric Load (0.9ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 39ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:01:08) [GET]
+  Parameters: {"1270165460"=>nil}
+
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:02:08) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 40ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:02:08) [GET]
+  Parameters: {"1270165460"=>nil}
+
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#new (for 127.0.0.1 at 2010-04-01 18:02:14) [GET]
+Rendering template within layouts/lyrics
+Rendering lyrics/new
+Completed in 30ms (View: 17, DB: 0) | 200 OK [http://localhost/lyrics/new]
+
+
+Processing LyricsController#create (for 127.0.0.1 at 2010-04-01 18:02:16) [POST]
+  Parameters: {"commit"=>"Create", "lyric"=>{"lyrics"=>"", "artist"=>"", "image_url"=>"", "title"=>"ddd", "album"=>"", "year"=>""}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081"}
+  [4;36;1mLyric Create (0.7ms)[0m   [0;1mINSERT INTO "lyrics" ("artist", "lyrics", "created_at", "title", "image_url", "updated_at", "album", "year") VALUES('', '', '2010-04-02 01:02:16', 'ddd', '', '2010-04-02 01:02:16', '', '')[0m
+Redirected to #<Lyric:0xb665a700>
+Completed in 152ms (DB: 1) | 302 Found [http://localhost/lyrics]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:02:16) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mLyric Load (0.6ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 4) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 25ms (View: 10, DB: 1) | 200 OK [http://localhost/lyrics/4]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:02:18) [GET]
+  [4;36;1mLyric Load (1.2ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 47ms (View: 36, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:02:18) [GET]
+  Parameters: {"1270165460"=>nil}
+
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:02:39) [GET]
+  [4;35;1mLyric Load (1.2ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 48ms (View: 37, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:02:39) [GET]
+  Parameters: {"1270165460"=>nil}
+
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#destroy (for 127.0.0.1 at 2010-04-01 18:02:47) [DELETE]
+  Parameters: {"authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"4"}
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 4) [0m
+  [4;35;1mLyric Destroy (0.6ms)[0m   [0mDELETE FROM "lyrics" WHERE "id" = 4[0m
+Redirected to http://localhost/lyrics
+Completed in 129ms (DB: 2) | 302 Found [http://localhost/lyrics/4]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:02:47) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 40ms (View: 28, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:02:47) [GET]
+  Parameters: {"1270165460"=>nil}
+
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#edit (for 127.0.0.1 at 2010-04-01 18:03:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLyric Load (0.6ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/edit
+Completed in 33ms (View: 20, DB: 1) | 200 OK [http://localhost/lyrics/2/edit]
+
+
+Processing LyricsController#update (for 127.0.0.1 at 2010-04-01 18:03:09) [PUT]
+  Parameters: {"commit"=>"Update", "lyric"=>{"lyrics"=>"Psychic spies from China\r\nTry to steal your mind's elation\r\nLittle girls from Sweden\r\nDream of silver screen quotations\r\nAnd if you want these kind of dreams\r\nIt's Californication\r\n\r\nIt's the edge of the world\r\nAnd all of western civilization\r\nThe sun may rise in the East\r\nAt least it settles in the final location\r\nIt's understood that Hollywood\r\nsells Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nCelebrity skin is this your chin\r\nOr is that war your waging\r\n\r\n[Chorus:]\r\nFirst born unicorn\r\nHard core soft porn\r\nDream of Californication\r\nDream of Californication\r\n\r\nMarry me girl be my fairy to the world\r\nBe my very own constellation\r\nA teenage bride with a baby inside\r\nGetting high on information\r\nAnd buy me a star on the boulevard\r\nIt's Californication\r\n\r\nSpace may be the final frontier\r\nBut it's made in a Hollywood basement\r\nCobain can you hear the spheres\r\nSinging songs off station to station\r\nAnd Alderon's not far away\r\nIt's Californication\r\n\r\nBorn and raised by those who praise\r\nControl of population everybody's been there\r\nand\r\nI don't mean on vacation\r\n\r\n[Chorus]\r\n\r\nDestruction leads to a very rough road\r\nBut it also breeds creation\r\nAnd earthquakes are to a girl's guitar\r\nThey're just another good vibration\r\nAnd tidal waves couldn't save the world\r\nFrom Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nSicker than the rest\r\nThere is no test\r\nBut this is what you're craving\r\n\r\n[Chorus] ", "artist"=>"Red Hot Chili Peppers", "image_url"=>"californication", "title"=>"Californication", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"2"}
+  [4;36;1mLyric Load (0.6ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+  [4;35;1mLyric Update (0.5ms)[0m   [0mUPDATE "lyrics" SET "updated_at" = '2010-04-02 01:03:09', "image_url" = 'californication' WHERE "id" = 2[0m
+Redirected to #<Lyric:0xb66c6874>
+Completed in 86ms (DB: 1) | 302 Found [http://localhost/lyrics/2]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:03:10) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (0.7ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 28ms (View: 12, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:03:12) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 36ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:03:12) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#edit (for 127.0.0.1 at 2010-04-01 18:03:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (0.7ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/edit
+Completed in 32ms (View: 19, DB: 1) | 200 OK [http://localhost/lyrics/2/edit]
+
+
+Processing LyricsController#update (for 127.0.0.1 at 2010-04-01 18:03:22) [PUT]
+  Parameters: {"commit"=>"Update", "lyric"=>{"lyrics"=>"Psychic spies from China\r\nTry to steal your mind's elation\r\nLittle girls from Sweden\r\nDream of silver screen quotations\r\nAnd if you want these kind of dreams\r\nIt's Californication\r\n\r\nIt's the edge of the world\r\nAnd all of western civilization\r\nThe sun may rise in the East\r\nAt least it settles in the final location\r\nIt's understood that Hollywood\r\nsells Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nCelebrity skin is this your chin\r\nOr is that war your waging\r\n\r\n[Chorus:]\r\nFirst born unicorn\r\nHard core soft porn\r\nDream of Californication\r\nDream of Californication\r\n\r\nMarry me girl be my fairy to the world\r\nBe my very own constellation\r\nA teenage bride with a baby inside\r\nGetting high on information\r\nAnd buy me a star on the boulevard\r\nIt's Californication\r\n\r\nSpace may be the final frontier\r\nBut it's made in a Hollywood basement\r\nCobain can you hear the spheres\r\nSinging songs off station to station\r\nAnd Alderon's not far away\r\nIt's Californication\r\n\r\nBorn and raised by those who praise\r\nControl of population everybody's been there\r\nand\r\nI don't mean on vacation\r\n\r\n[Chorus]\r\n\r\nDestruction leads to a very rough road\r\nBut it also breeds creation\r\nAnd earthquakes are to a girl's guitar\r\nThey're just another good vibration\r\nAnd tidal waves couldn't save the world\r\nFrom Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nSicker than the rest\r\nThere is no test\r\nBut this is what you're craving\r\n\r\n[Chorus] ", "artist"=>"Red Hot Chili Peppers", "image_url"=>"californication", "title"=>"Californication", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"2"}
+  [4;35;1mLyric Load (0.9ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Redirected to #<Lyric:0xb6550f58>
+Completed in 20ms (DB: 1) | 302 Found [http://localhost/lyrics/2]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:03:22) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (0.6ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 23ms (View: 9, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:03:25) [GET]
+  [4;35;1mLyric Load (0.9ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 35ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:03:25) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#edit (for 127.0.0.1 at 2010-04-01 18:03:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (0.8ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/edit
+Completed in 35ms (View: 19, DB: 1) | 200 OK [http://localhost/lyrics/2/edit]
+
+
+Processing LyricsController#update (for 127.0.0.1 at 2010-04-01 18:03:34) [PUT]
+  Parameters: {"commit"=>"Update", "lyric"=>{"lyrics"=>"Psychic spies from China\r\nTry to steal your mind's elation\r\nLittle girls from Sweden\r\nDream of silver screen quotations\r\nAnd if you want these kind of dreams\r\nIt's Californication\r\n\r\nIt's the edge of the world\r\nAnd all of western civilization\r\nThe sun may rise in the East\r\nAt least it settles in the final location\r\nIt's understood that Hollywood\r\nsells Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nCelebrity skin is this your chin\r\nOr is that war your waging\r\n\r\n[Chorus:]\r\nFirst born unicorn\r\nHard core soft porn\r\nDream of Californication\r\nDream of Californication\r\n\r\nMarry me girl be my fairy to the world\r\nBe my very own constellation\r\nA teenage bride with a baby inside\r\nGetting high on information\r\nAnd buy me a star on the boulevard\r\nIt's Californication\r\n\r\nSpace may be the final frontier\r\nBut it's made in a Hollywood basement\r\nCobain can you hear the spheres\r\nSinging songs off station to station\r\nAnd Alderon's not far away\r\nIt's Californication\r\n\r\nBorn and raised by those who praise\r\nControl of population everybody's been there\r\nand\r\nI don't mean on vacation\r\n\r\n[Chorus]\r\n\r\nDestruction leads to a very rough road\r\nBut it also breeds creation\r\nAnd earthquakes are to a girl's guitar\r\nThey're just another good vibration\r\nAnd tidal waves couldn't save the world\r\nFrom Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nSicker than the rest\r\nThere is no test\r\nBut this is what you're craving\r\n\r\n[Chorus] ", "artist"=>"Red Hot Chili Peppers", "image_url"=>"californication", "title"=>"californication", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"2"}
+  [4;35;1mLyric Load (0.6ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+  [4;36;1mLyric Update (0.6ms)[0m   [0;1mUPDATE "lyrics" SET "updated_at" = '2010-04-02 01:03:34', "title" = 'californication' WHERE "id" = 2[0m
+Redirected to #<Lyric:0xb672d114>
+Completed in 89ms (DB: 1) | 302 Found [http://localhost/lyrics/2]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:03:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 26ms (View: 11, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:03:36) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 36ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:03:36) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:08:29) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:08:29) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:08:34) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 36ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:08:34) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:10:27) [GET]
+  [4;35;1mLyric Load (0.9ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 36ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:10:27) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:10:28) [GET]
+  [4;36;1mLyric Load (0.9ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 36ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:10:28) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:10:29) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:10:29) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:10:39) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 40ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:10:39) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#edit (for 127.0.0.1 at 2010-04-01 18:10:48) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLyric Load (0.8ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/edit
+Completed in 35ms (View: 19, DB: 1) | 200 OK [http://localhost/lyrics/2/edit]
+
+
+Processing LyricsController#update (for 127.0.0.1 at 2010-04-01 18:10:52) [PUT]
+  Parameters: {"commit"=>"Update", "lyric"=>{"lyrics"=>"Psychic spies from China\r\nTry to steal your mind's elation\r\nLittle girls from Sweden\r\nDream of silver screen quotations\r\nAnd if you want these kind of dreams\r\nIt's Californication\r\n\r\nIt's the edge of the world\r\nAnd all of western civilization\r\nThe sun may rise in the East\r\nAt least it settles in the final location\r\nIt's understood that Hollywood\r\nsells Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nCelebrity skin is this your chin\r\nOr is that war your waging\r\n\r\n[Chorus:]\r\nFirst born unicorn\r\nHard core soft porn\r\nDream of Californication\r\nDream of Californication\r\n\r\nMarry me girl be my fairy to the world\r\nBe my very own constellation\r\nA teenage bride with a baby inside\r\nGetting high on information\r\nAnd buy me a star on the boulevard\r\nIt's Californication\r\n\r\nSpace may be the final frontier\r\nBut it's made in a Hollywood basement\r\nCobain can you hear the spheres\r\nSinging songs off station to station\r\nAnd Alderon's not far away\r\nIt's Californication\r\n\r\nBorn and raised by those who praise\r\nControl of population everybody's been there\r\nand\r\nI don't mean on vacation\r\n\r\n[Chorus]\r\n\r\nDestruction leads to a very rough road\r\nBut it also breeds creation\r\nAnd earthquakes are to a girl's guitar\r\nThey're just another good vibration\r\nAnd tidal waves couldn't save the world\r\nFrom Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nSicker than the rest\r\nThere is no test\r\nBut this is what you're craving\r\n\r\n[Chorus] ", "artist"=>"Red Hot Chili Peppers", "image_url"=>"californication", "title"=>"Californication", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"2"}
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+  [4;35;1mLyric Update (0.7ms)[0m   [0mUPDATE "lyrics" SET "updated_at" = '2010-04-02 01:10:53', "title" = 'Californication' WHERE "id" = 2[0m
+Redirected to #<Lyric:0xb65ad960>
+Completed in 114ms (DB: 2) | 302 Found [http://localhost/lyrics/2]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:10:53) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (1.1ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 34ms (View: 13, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:11:15) [GET]
+  [4;35;1mLyric Load (0.9ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 36ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:11:15) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:11:48) [GET]
+  [4;36;1mLyric Load (0.9ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 35ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:11:48) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:15:33) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+
+
+ActionView::TemplateError (wrong number of arguments (1 for 0)) on line #7 of app/views/lyrics/index.html.erb:
+4:   <div class="entry">
+5:     <%= image_tag(lyric.image_url) %>
+6:     <h3><%=h lyric.title %></h3>
+7:     <h3>Artist:  <%=h lyric.artist "33"  %>
+8:     </h3>
+9:     <%= lyric.lyrics %>
+10:     <br />
+
+    app/views/lyrics/index.html.erb:7:in `artist'
+    app/views/lyrics/index.html.erb:7
+    app/views/lyrics/index.html.erb:3:in `each'
+    app/views/lyrics/index.html.erb:3
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_view/renderable.rb:39:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_view/renderable.rb:39:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_view/template.rb:73:in `render_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_view/base.rb:256:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_view/base.rb:369:in `_render_with_layout'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_view/base.rb:254:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/base.rb:1177:in `render_for_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/base.rb:905:in `render_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.2.3/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/mime_responds.rb:135:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/mime_responds.rb:135:in `custom'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/mime_responds.rb:164:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/mime_responds.rb:164:in `respond'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/mime_responds.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/mime_responds.rb:158:in `respond'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    app/controllers/lyrics_controller.rb:7:in `index'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/base.rb:1256:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/filters.rb:617:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/caching/sql_cache.rb:13:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.2.3/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.2.3/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/caching/sql_cache.rb:12:in `passenger_orig_perform_action'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:65:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/base.rb:524:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/session_management.rb:134:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/base.rb:392:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/_trace (83.9ms)
+Rendered /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/_request_and_response (1.3ms)
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:15:56) [GET]
+  [4;36;1mLyric Load (0.9ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 37ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:16:03) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 35ms (View: 24, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:16:03) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:16:04) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 36ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:16:05) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:16:10) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 42ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:16:10) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:16:36) [GET]
+  [4;36;1mLyric Load (1.4ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 55ms (View: 39, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:16:36) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:17:16) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:17:16) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:18:31) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:18:31) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#edit (for 127.0.0.1 at 2010-04-01 18:20:30) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLyric Load (0.6ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/edit
+Completed in 32ms (View: 19, DB: 1) | 200 OK [http://localhost/lyrics/2/edit]
+
+
+Processing LyricsController#update (for 127.0.0.1 at 2010-04-01 18:20:39) [PUT]
+  Parameters: {"commit"=>"Update", "lyric"=>{"lyrics"=>"Psychic spies from China\r\nTry to steal your mind's elation\r\nLittle girls from Sweden\r\nDream of silver screen quotations\r\nAnd if you want these kind of dreams\r\nIt's Californication\r\n\r\nIt's the edge of the world\r\nAnd all of western civilization\r\nThe sun may rise in the East\r\nAt least it settles in the final location\r\nIt's understood that Hollywood\r\nsells Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nCelebrity skin is this your chin\r\nOr is that war your waging\r\n\r\n[Chorus:]\r\nFirst born unicorn\r\nHard core soft porn\r\nDream of Californication\r\nDream of Californication\r\n\r\nMarry me girl be my fairy to the world\r\nBe my very own constellation\r\nA teenage bride with a baby inside\r\nGetting high on information\r\nAnd buy me a star on the boulevard\r\nIt's Californication\r\n\r\nSpace may be the final frontier\r\nBut it's made in a Hollywood basement\r\nCobain can you hear the spheres\r\nSinging songs off station to station\r\nAnd Alderon's not far away\r\nIt's Californication\r\n\r\nBorn and raised by those who praise\r\nControl of population everybody's been there\r\nand\r\nI don't mean on vacation\r\n\r\n[Chorus]\r\n\r\nDestruction leads to a very rough road\r\nBut it also breeds creation\r\nAnd earthquakes are to a girl's guitar\r\nThey're just another good vibration\r\nAnd tidal waves couldn't save the world\r\nFrom Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nSicker than the rest\r\nThere is no test\r\nBut this is what you're craving\r\n\r\n[Chorus] ", "artist"=>"Red Hot Chili Peppers", "image_url"=>"", "title"=>"Californication", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"2"}
+  [4;36;1mLyric Load (0.6ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+  [4;35;1mLyric Update (0.7ms)[0m   [0mUPDATE "lyrics" SET "updated_at" = '2010-04-02 01:20:39', "image_url" = '' WHERE "id" = 2[0m
+Redirected to #<Lyric:0xb64a71c4>
+Completed in 102ms (DB: 1) | 302 Found [http://localhost/lyrics/2]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:20:39) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (0.7ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 28ms (View: 11, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:20:41) [GET]
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:20:42) [GET]
+  Parameters: {"1270165460"=>nil}
+
+
+ActionController::RoutingError (No route matches "/images/" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#edit (for 127.0.0.1 at 2010-04-01 18:20:47) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (0.7ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/edit
+Completed in 34ms (View: 19, DB: 1) | 200 OK [http://localhost/lyrics/2/edit]
+
+
+Processing LyricsController#update (for 127.0.0.1 at 2010-04-01 18:20:55) [PUT]
+  Parameters: {"commit"=>"Update", "lyric"=>{"lyrics"=>"Psychic spies from China\r\nTry to steal your mind's elation\r\nLittle girls from Sweden\r\nDream of silver screen quotations\r\nAnd if you want these kind of dreams\r\nIt's Californication\r\n\r\nIt's the edge of the world\r\nAnd all of western civilization\r\nThe sun may rise in the East\r\nAt least it settles in the final location\r\nIt's understood that Hollywood\r\nsells Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nCelebrity skin is this your chin\r\nOr is that war your waging\r\n\r\n[Chorus:]\r\nFirst born unicorn\r\nHard core soft porn\r\nDream of Californication\r\nDream of Californication\r\n\r\nMarry me girl be my fairy to the world\r\nBe my very own constellation\r\nA teenage bride with a baby inside\r\nGetting high on information\r\nAnd buy me a star on the boulevard\r\nIt's Californication\r\n\r\nSpace may be the final frontier\r\nBut it's made in a Hollywood basement\r\nCobain can you hear the spheres\r\nSinging songs off station to station\r\nAnd Alderon's not far away\r\nIt's Californication\r\n\r\nBorn and raised by those who praise\r\nControl of population everybody's been there\r\nand\r\nI don't mean on vacation\r\n\r\n[Chorus]\r\n\r\nDestruction leads to a very rough road\r\nBut it also breeds creation\r\nAnd earthquakes are to a girl's guitar\r\nThey're just another good vibration\r\nAnd tidal waves couldn't save the world\r\nFrom Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nSicker than the rest\r\nThere is no test\r\nBut this is what you're craving\r\n\r\n[Chorus] ", "artist"=>"Red Hot Chili Peppers", "image_url"=>"./californication", "title"=>"Californication", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"2"}
+  [4;35;1mLyric Load (0.9ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+  [4;36;1mLyric Update (0.8ms)[0m   [0;1mUPDATE "lyrics" SET "updated_at" = '2010-04-02 01:20:56', "image_url" = './californication' WHERE "id" = 2[0m
+Redirected to #<Lyric:0xb6511e0c>
+Completed in 87ms (DB: 2) | 302 Found [http://localhost/lyrics/2]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:20:56) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLyric Load (1.5ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 27ms (View: 10, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:20:57) [GET]
+  [4;36;1mLyric Load (1.0ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 37ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-01 18:20:58) [GET]
+
+
+ActionController::RoutingError (No route matches "/images/californication" with {:method=>:get}):
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/request_handler.rb:50:in `process_request'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:418:in `start_request_handler'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:358:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:354:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:163:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/railz/application_spawner.rb:213:in `start'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    /usr/lib/ruby/gems/1.8/gems/passenger-2.2.11/bin/passenger-spawn-server:61
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.2.3/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing LyricsController#edit (for 127.0.0.1 at 2010-04-01 18:21:02) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLyric Load (0.6ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/edit
+Completed in 34ms (View: 20, DB: 1) | 200 OK [http://localhost/lyrics/2/edit]
+
+
+Processing LyricsController#update (for 127.0.0.1 at 2010-04-01 18:22:50) [PUT]
+  Parameters: {"commit"=>"Update", "lyric"=>{"lyrics"=>"Psychic spies from China\r\nTry to steal your mind's elation\r\nLittle girls from Sweden\r\nDream of silver screen quotations\r\nAnd if you want these kind of dreams\r\nIt's Californication\r\n\r\nIt's the edge of the world\r\nAnd all of western civilization\r\nThe sun may rise in the East\r\nAt least it settles in the final location\r\nIt's understood that Hollywood\r\nsells Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nCelebrity skin is this your chin\r\nOr is that war your waging\r\n\r\n[Chorus:]\r\nFirst born unicorn\r\nHard core soft porn\r\nDream of Californication\r\nDream of Californication\r\n\r\nMarry me girl be my fairy to the world\r\nBe my very own constellation\r\nA teenage bride with a baby inside\r\nGetting high on information\r\nAnd buy me a star on the boulevard\r\nIt's Californication\r\n\r\nSpace may be the final frontier\r\nBut it's made in a Hollywood basement\r\nCobain can you hear the spheres\r\nSinging songs off station to station\r\nAnd Alderon's not far away\r\nIt's Californication\r\n\r\nBorn and raised by those who praise\r\nControl of population everybody's been there\r\nand\r\nI don't mean on vacation\r\n\r\n[Chorus]\r\n\r\nDestruction leads to a very rough road\r\nBut it also breeds creation\r\nAnd earthquakes are to a girl's guitar\r\nThey're just another good vibration\r\nAnd tidal waves couldn't save the world\r\nFrom Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nSicker than the rest\r\nThere is no test\r\nBut this is what you're craving\r\n\r\n[Chorus] ", "artist"=>"Red Hot Chili Peppers", "image_url"=>"/images/californication.jpg", "title"=>"Californication", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"2"}
+  [4;36;1mLyric Load (0.6ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+  [4;35;1mLyric Update (0.6ms)[0m   [0mUPDATE "lyrics" SET "updated_at" = '2010-04-02 01:22:50', "image_url" = '/images/californication.jpg' WHERE "id" = 2[0m
+Redirected to #<Lyric:0xb66d92a8>
+Completed in 89ms (DB: 1) | 302 Found [http://localhost/lyrics/2]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:22:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (0.9ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 26ms (View: 9, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:22:51) [GET]
+  [4;35;1mLyric Load (1.3ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 37ms (View: 25, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:26:27) [GET]
+  [4;36;1mLyric Load (0.9ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 38ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:26:37) [GET]
+  [4;35;1mLyric Load (1.2ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 38ms (View: 26, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#new (for 127.0.0.1 at 2010-04-01 18:29:18) [GET]
+Rendering template within layouts/lyrics
+Rendering lyrics/new
+Completed in 47ms (View: 27, DB: 0) | 200 OK [http://localhost/lyrics/new]
+
+
+Processing LyricsController#create (for 127.0.0.1 at 2010-04-01 18:29:54) [POST]
+  Parameters: {"commit"=>"Create", "lyric"=>{"lyrics"=>"Scar tissue that I wish you saw\r\nSarcastic mister know it all\r\nClose your eyes and I'll kiss you 'cause\r\nWith the birds I'll share\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\n\r\nPush me up against the wall\r\nYoung Kentucky girl in a push-up bra\r\nFallin' all over myself\r\nTo lick your heart and taste you health 'cause\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\n\r\nBlood loss in a bathroom stall\r\nSouthern girl with a scarlet drawl\r\nWave good-bye to ma and pa 'cause\r\nWith the birds I'll share\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\n\r\nSoft spoken with a broken jaw\r\nStep outside but not to brawl\r\nAutumn's sweet we call it fall\r\nI'll make it to the moon if I have to crawl and\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\n\r\nScar tissue that I wish you saw\r\nSarcastic mister know it all\r\nClose your eyes and I'll kiss you 'cause\r\nWith the birds I'll share\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view", "artist"=>"Red Hot Chili Peppers", "image_url"=>"/images/californication.jpg", "title"=>"Scar Tissue", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081"}
+  [4;36;1mLyric Create (0.8ms)[0m   [0;1mINSERT INTO "lyrics" ("artist", "lyrics", "created_at", "title", "image_url", "updated_at", "album", "year") VALUES('Red Hot Chili Peppers', 'Scar tissue that I wish you saw
+Sarcastic mister know it all
+Close your eyes and I''ll kiss you ''cause
+With the birds I''ll share
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+
+Push me up against the wall
+Young Kentucky girl in a push-up bra
+Fallin'' all over myself
+To lick your heart and taste you health ''cause
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+
+Blood loss in a bathroom stall
+Southern girl with a scarlet drawl
+Wave good-bye to ma and pa ''cause
+With the birds I''ll share
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+
+Soft spoken with a broken jaw
+Step outside but not to brawl
+Autumn''s sweet we call it fall
+I''ll make it to the moon if I have to crawl and
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+
+Scar tissue that I wish you saw
+Sarcastic mister know it all
+Close your eyes and I''ll kiss you ''cause
+With the birds I''ll share
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view', '2010-04-02 01:29:54', 'Scar Tissue', '/images/californication.jpg', '2010-04-02 01:29:54', 'Californication', '1999')[0m
+Redirected to #<Lyric:0xb64cc578>
+Completed in 126ms (DB: 1) | 302 Found [http://localhost/lyrics]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:29:54) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mLyric Load (1.1ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 5) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 32ms (View: 11, DB: 1) | 200 OK [http://localhost/lyrics/5]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:29:56) [GET]
+  [4;36;1mLyric Load (1.4ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 168ms (View: 54, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:30:21) [GET]
+  [4;35;1mLyric Load (1.3ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 69ms (View: 53, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:31:10) [GET]
+  [4;36;1mLyric Load (7.5ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 92ms (View: 62, DB: 8) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:31:22) [GET]
+  [4;35;1mLyric Load (1.9ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 74ms (View: 50, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:32:25) [GET]
+  [4;36;1mLyric Load (1.2ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 64ms (View: 49, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:32:26) [GET]
+  [4;35;1mLyric Load (1.9ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 71ms (View: 54, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:33:04) [GET]
+  [4;36;1mLyric Load (1.6ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 54ms (View: 42, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:34:18) [GET]
+  [4;35;1mLyric Load (1.2ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 50ms (View: 39, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:34:20) [GET]
+  [4;36;1mLyric Load (1.5ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 54ms (View: 42, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:34:40) [GET]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:34:40) [GET]
+  [4;36;1mLyric Load (2.1ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 85ms (View: 66, DB: 2) | 200 OK [http://localhost/lyrics]
+  [4;36;1mLyric Load (2.4ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 67ms (View: 49, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:34:53) [GET]
+  [4;35;1mLyric Load (1.2ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 63ms (View: 50, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:34:54) [GET]
+  [4;36;1mLyric Load (1.2ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 59ms (View: 47, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:35:06) [GET]
+  [4;35;1mLyric Load (1.9ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 62ms (View: 48, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:35:07) [GET]
+  [4;36;1mLyric Load (1.2ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 62ms (View: 47, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:35:19) [GET]
+  [4;35;1mLyric Load (1.3ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 58ms (View: 45, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:35:20) [GET]
+  [4;36;1mLyric Load (1.3ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 63ms (View: 46, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:37:28) [GET]
+  [4;35;1mLyric Load (1.2ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 58ms (View: 46, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:37:29) [GET]
+  [4;36;1mLyric Load (1.2ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 59ms (View: 47, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:38:11) [GET]
+  [4;35;1mLyric Load (1.4ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 62ms (View: 47, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:38:12) [GET]
+  [4;36;1mLyric Load (1.3ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 57ms (View: 46, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:40:25) [GET]
+  [4;35;1mLyric Load (1.2ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 56ms (View: 45, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:40:26) [GET]
+  [4;36;1mLyric Load (1.9ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 60ms (View: 45, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:42:07) [GET]
+  [4;35;1mLyric Load (1.8ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 58ms (View: 45, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:42:08) [GET]
+  [4;36;1mLyric Load (1.2ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 62ms (View: 47, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:43:23) [GET]
+  [4;35;1mLyric Load (1.2ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 61ms (View: 47, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:46:18) [GET]
+  [4;36;1mLyric Load (1.6ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 67ms (View: 51, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#edit (for 127.0.0.1 at 2010-04-01 18:49:59) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mLyric Load (0.6ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 5) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/edit
+Completed in 37ms (View: 21, DB: 1) | 200 OK [http://localhost/lyrics/5/edit]
+
+
+Processing LyricsController#update (for 127.0.0.1 at 2010-04-01 18:50:18) [PUT]
+  Parameters: {"commit"=>"Update", "lyric"=>{"lyrics"=>"<pre>\r\nScar tissue that I wish you saw\r\nSarcastic mister know it all\r\nClose your eyes and I'll kiss you 'cause\r\nWith the birds I'll share\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\n\r\nPush me up against the wall\r\nYoung Kentucky girl in a push-up bra\r\nFallin' all over myself\r\nTo lick your heart and taste you health 'cause\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\n\r\nBlood loss in a bathroom stall\r\nSouthern girl with a scarlet drawl\r\nWave good-bye to ma and pa 'cause\r\nWith the birds I'll share\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\n\r\nSoft spoken with a broken jaw\r\nStep outside but not to brawl\r\nAutumn's sweet we call it fall\r\nI'll make it to the moon if I have to crawl and\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\n\r\nScar tissue that I wish you saw\r\nSarcastic mister know it all\r\nClose your eyes and I'll kiss you 'cause\r\nWith the birds I'll share\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\nWith the birds I'll share\r\nThis lonely view\r\n</pre>", "artist"=>"Red Hot Chili Peppers", "image_url"=>"/images/californication.jpg", "title"=>"Scar Tissue", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"5"}
+  [4;36;1mLyric Load (0.7ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 5) [0m
+  [4;35;1mLyric Update (0.9ms)[0m   [0mUPDATE "lyrics" SET "updated_at" = '2010-04-02 01:50:18', "lyrics" = '<pre>
+Scar tissue that I wish you saw
+Sarcastic mister know it all
+Close your eyes and I''ll kiss you ''cause
+With the birds I''ll share
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+
+Push me up against the wall
+Young Kentucky girl in a push-up bra
+Fallin'' all over myself
+To lick your heart and taste you health ''cause
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+
+Blood loss in a bathroom stall
+Southern girl with a scarlet drawl
+Wave good-bye to ma and pa ''cause
+With the birds I''ll share
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+
+Soft spoken with a broken jaw
+Step outside but not to brawl
+Autumn''s sweet we call it fall
+I''ll make it to the moon if I have to crawl and
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+
+Scar tissue that I wish you saw
+Sarcastic mister know it all
+Close your eyes and I''ll kiss you ''cause
+With the birds I''ll share
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+With the birds I''ll share
+This lonely view
+</pre>' WHERE "id" = 5[0m
+Redirected to #<Lyric:0xb64c4a44>
+Completed in 91ms (DB: 2) | 302 Found [http://localhost/lyrics/5]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:50:18) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mLyric Load (0.6ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 5) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 24ms (View: 9, DB: 1) | 200 OK [http://localhost/lyrics/5]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:50:20) [GET]
+  [4;35;1mLyric Load (1.3ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 57ms (View: 44, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:51:42) [GET]
+  [4;36;1mLyric Load (1.2ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 156ms (View: 139, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#edit (for 127.0.0.1 at 2010-04-01 18:54:41) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mLyric Load (1.0ms)[0m   [0mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/edit
+Completed in 37ms (View: 23, DB: 1) | 200 OK [http://localhost/lyrics/2/edit]
+
+
+Processing LyricsController#update (for 127.0.0.1 at 2010-04-01 18:54:57) [PUT]
+  Parameters: {"commit"=>"Update", "lyric"=>{"lyrics"=>"<pre>\r\nPsychic spies from China\r\nTry to steal your mind's elation\r\nLittle girls from Sweden\r\nDream of silver screen quotations\r\nAnd if you want these kind of dreams\r\nIt's Californication\r\n\r\nIt's the edge of the world\r\nAnd all of western civilization\r\nThe sun may rise in the East\r\nAt least it settles in the final location\r\nIt's understood that Hollywood\r\nsells Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nCelebrity skin is this your chin\r\nOr is that war your waging\r\n\r\n[Chorus:]\r\nFirst born unicorn\r\nHard core soft porn\r\nDream of Californication\r\nDream of Californication\r\n\r\nMarry me girl be my fairy to the world\r\nBe my very own constellation\r\nA teenage bride with a baby inside\r\nGetting high on information\r\nAnd buy me a star on the boulevard\r\nIt's Californication\r\n\r\nSpace may be the final frontier\r\nBut it's made in a Hollywood basement\r\nCobain can you hear the spheres\r\nSinging songs off station to station\r\nAnd Alderon's not far away\r\nIt's Californication\r\n\r\nBorn and raised by those who praise\r\nControl of population everybody's been there\r\nand\r\nI don't mean on vacation\r\n\r\n[Chorus]\r\n\r\nDestruction leads to a very rough road\r\nBut it also breeds creation\r\nAnd earthquakes are to a girl's guitar\r\nThey're just another good vibration\r\nAnd tidal waves couldn't save the world\r\nFrom Californication\r\n\r\nPay your surgeon very well\r\nTo break the spell of aging\r\nSicker than the rest\r\nThere is no test\r\nBut this is what you're craving\r\n\r\n[Chorus] \r\n</pre>", "artist"=>"Red Hot Chili Peppers", "image_url"=>"/images/californication.jpg", "title"=>"Californication", "album"=>"Californication", "year"=>"1999"}, "authenticity_token"=>"c2888cec9c7cb935effc3215ddb403c91e352081", "id"=>"2"}
+  [4;36;1mLyric Load (0.7ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+  [4;35;1mLyric Update (0.7ms)[0m   [0mUPDATE "lyrics" SET "updated_at" = '2010-04-02 01:54:57', "lyrics" = '<pre>
+Psychic spies from China
+Try to steal your mind''s elation
+Little girls from Sweden
+Dream of silver screen quotations
+And if you want these kind of dreams
+It''s Californication
+
+It''s the edge of the world
+And all of western civilization
+The sun may rise in the East
+At least it settles in the final location
+It''s understood that Hollywood
+sells Californication
+
+Pay your surgeon very well
+To break the spell of aging
+Celebrity skin is this your chin
+Or is that war your waging
+
+[Chorus:]
+First born unicorn
+Hard core soft porn
+Dream of Californication
+Dream of Californication
+
+Marry me girl be my fairy to the world
+Be my very own constellation
+A teenage bride with a baby inside
+Getting high on information
+And buy me a star on the boulevard
+It''s Californication
+
+Space may be the final frontier
+But it''s made in a Hollywood basement
+Cobain can you hear the spheres
+Singing songs off station to station
+And Alderon''s not far away
+It''s Californication
+
+Born and raised by those who praise
+Control of population everybody''s been there
+and
+I don''t mean on vacation
+
+[Chorus]
+
+Destruction leads to a very rough road
+But it also breeds creation
+And earthquakes are to a girl''s guitar
+They''re just another good vibration
+And tidal waves couldn''t save the world
+From Californication
+
+Pay your surgeon very well
+To break the spell of aging
+Sicker than the rest
+There is no test
+But this is what you''re craving
+
+[Chorus] 
+</pre>' WHERE "id" = 2[0m
+Redirected to #<Lyric:0xb666982c>
+Completed in 102ms (DB: 1) | 302 Found [http://localhost/lyrics/2]
+
+
+Processing LyricsController#show (for 127.0.0.1 at 2010-04-01 18:54:57) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mLyric Load (0.6ms)[0m   [0;1mSELECT * FROM "lyrics" WHERE ("lyrics"."id" = 2) [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/show
+Completed in 24ms (View: 9, DB: 1) | 200 OK [http://localhost/lyrics/2]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:55:00) [GET]
+  [4;35;1mLyric Load (1.5ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 60ms (View: 49, DB: 2) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 18:59:43) [GET]
+  [4;36;1mLyric Load (1.2ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 57ms (View: 45, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 19:02:24) [GET]
+  [4;35;1mLyric Load (1.2ms)[0m   [0mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 57ms (View: 44, DB: 1) | 200 OK [http://localhost/lyrics]
+
+
+Processing LyricsController#index (for 127.0.0.1 at 2010-04-01 19:19:16) [GET]
+  [4;36;1mLyric Load (1.5ms)[0m   [0;1mSELECT * FROM "lyrics" [0m
+Rendering template within layouts/lyrics
+Rendering lyrics/index
+Completed in 58ms (View: 45, DB: 2) | 200 OK [http://localhost/lyrics]
