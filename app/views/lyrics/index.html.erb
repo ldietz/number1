@@ -1,22 +1,53 @@
-<h1 align="center">Lyric Mesh</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<% for lyric in @lyrics -%>
-  <div class="entry">
-    <%= image_tag(lyric.image_url, :size => "300x300") %>
-    <h3><%=h lyric.title %></h3>
-    <h3>
-    Artist:  <%=h lyric.artist %> <br />
-    Album:   <%=h lyric.album %>  <br />
-    Year:    <%=h lyric.year %>   <br /><br />
-    <%= lyric.lyrics %>
-    </h3>
-    <td><%= link_to 'Show', lyric %></td>
-    <td><%= link_to 'Edit', edit_lyric_path(lyric) %></td>
-    <td><%= link_to 'Destroy', lyric, :confirm => 'Are you sure?', :method => :delete %></td>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>yrics: <%= controller.action_name %></title>
+</head>
+<body id="store">
+  <div id="banner">
+    <%= image_tag("logobackdrop.png")  %>
+      <% form_tag lyrics_path, :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      </p>
+      <% end %>
   </div>
-<% end %>
 
-hi
+  <div id="columns">
+    <div id="side">
+      <a href="http://luke.com"> Browse </a> <br />
+      <a href="http://luke.com"> Submit </a> <br />
+    </div>
+    <div id="main">
+      <% for lyric in @lyrics -%>
+        <%= image_tag(lyric.image_url, :size => "250x250") %>
+        <h3><%=h lyric.title %></h3>
+        <h3>
+          Search:  <%=h lyric.year %> <br />
+          Artist:  <%=h lyric.artist %> <br />
+          Album:   <%=h lyric.album %>  <br />
+          Year:    <%=h lyric.year %>   <br /><br />
+          <%= lyric.lyrics %>
+        </h3>
+        <td><%= link_to 'Show', lyric %></td>
+        <td><%= link_to 'Edit', edit_lyric_path(lyric) %></td>
+        <td><%= link_to 'Destroy', lyric, :confirm => 'Are you sure?', :method => :delete %></td>
+        <br />
+      <% end %>
+      <%= link_to 'New lyric', new_lyric_path %>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
 <!--
 <table>
   <tr class="list-description">
@@ -44,7 +75,3 @@ hi
 </table>
 
 -->
-
-<br />
-
-<%= link_to 'New lyric', new_lyric_path %>

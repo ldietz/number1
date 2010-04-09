@@ -162,37 +162,46 @@ pre  { background-color: #2C2774 }
 
 /* Styles for main page */
 #banner {
-  background: #9c9 ;
+  background: #2c2774 ;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282 ;
+  color: #625835 ;
   text-align: center;
 }
 #banner img {
-  float: left;
+  float: center;
 }
+#banner p {
+  text-align: right;
+}
+
 #columns {
-  background: #141 ;
+  background: #2C2774 ;
 }
 #main {
-  margin-left: 13em;
+  margin-left: 25em;
   padding-top: 4ex;
   padding-left: 2em;
-  background: white;
+  background: #2C2774;
 }
 #side {
   float: left;
   padding-top: 1em;
   padding-left: 1em;
   padding-bottom: 1em;
-  width: 12em;
-  background: #141 ;
+  width: 24em;
+  background: #2C2774;
+  line-height: 2;
 }
 #side a {
-  color: #bfb ;
-  font-size: small;
+  color: white ;
+  font-size: xx-large;
+}
+#side p {
+  color: white ;
+  font-size: xx-large;
 }
 
 #store .entry form, #store .entry form div {
