@@ -1,8 +1,13 @@
 class LyricsController < ApplicationController
+  
+  def search
+    
+  end
+  
   # GET /lyrics
   # GET /lyrics.xml
   def index
-    @lyrics = Lyric.find(:all)
+    @lyrics = Lyric.search(params[:search])
 
     respond_to do |format|
       format.html # index.html.erb
