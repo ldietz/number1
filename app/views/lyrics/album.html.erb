@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Artists <%= controller.action_name %></title>
+</head>
+<body id="store">
+  <div id="banner">
+    <%= image_tag("logobackdrop.png")  %>
+      <% form_tag lyrics_path, :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      </p>
+      <% end %>
+  </div>
+
+  <div id="columns">
+    <div id="side">
+    </div>
+    <div id="main">
+      <% previous_title = " " %>
+      <% for lyric in @albums -%>
+        <% if previous_title != lyric.title %>
+           <h3>
+             <a href="../lyrics/title?search=&artistsearch=<%=h lyric.title %>"> <%=h lyric.title %> </a>
+           </h3>
+         <% end %>  
+         <% previous_title = lyric.title %>
+      <% end %>
+     <!--  <%= link_to 'New lyric', new_lyric_path %> -->
+    </div>
+  </div>
+</body>
+</html>
+
