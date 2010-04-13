@@ -5,13 +5,33 @@ h1 {
         color: #ffffff;
         border-bottom: 3px dotted #77d;
 }
-
+h2 {
+  color: white;
+}
 h3 {
         color: #fff
 }
 body { background-color: #2C2774 }
 pre  { background-color: #2C2774 }
+
+a:link {
+  color: #ffffff; text-decoration: underline; 
+}
+a:active {
+  color: #ffffff; text-decoration: underline; 
+}
+a:visited {
+  color: #ffffff; text-decoration: underline; 
+}
+a:hover {
+  color: #ffffff; text-decoration: underline; 
+}
 /* Styles for lyrics/index */
+
+#lyric  a {
+  font-color:white;
+  font-size:large;
+}
 
 #lyric-list table {
         border-collapse: collapse;
@@ -185,6 +205,22 @@ pre  { background-color: #2C2774 }
   padding-top: 4ex;
   padding-left: 2em;
   background: #2C2774;
+}
+#artist {
+  font-color: white ;
+  font-size: large;  
+}
+#artist a:link {
+  color: #ffffff; text-decoration: underline; 
+}
+#artist a:active {
+  color: #ffffff; text-decoration: underline; 
+}
+#artist a:visited {
+  color: #ffffff; text-decoration: underline; 
+}
+#artist a:hover {
+  color: #ffffff; text-decoration: underline; 
 }
 #side {
   float: left;

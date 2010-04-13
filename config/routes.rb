@@ -1,6 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.connect "lyrics/:action", :controller => 'lyrics', :action =>
+    /[a-z]+/i
+ # map.connect "lyrics/artists/:action", :controller => 'lyrics', :action =>
+ #   /[a-z]+/i
   map.resources :lyrics
-
+  
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
