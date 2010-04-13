@@ -18,19 +18,26 @@
 
   <div id="columns">
     <div id="side">
+      <a href="../lyrics/"> Home     </a> <br />
     </div>
     <div id="main">
       <% previous_title = " " %>
-      <% for lyric in @artists -%>
-        <% if previous_title != lyric.title %>
-           <h3>
-             <a href="../album/title?search=&artistsearch=<%=h lyric.title %>"> <%=h lyric.title %> </a>
-           </h3>
-         <% end %>  
-         <% previous_title = lyric.title %>
+      <% for lyric in @titles -%>
+        <%= image_tag(lyric.image_url, :size => "250x250") %>
+        <h3><%=h lyric.title %></h3>
+        <h3>
+          Search:  <%=h lyric.year %> <br />
+          Artist:  <%=h lyric.artist %> <br />
+          Album:   <%=h lyric.album %>  <br />
+          Year:    <%=h lyric.year %>   <br /><br />
+          <%= lyric.lyrics %>
+        </h3>
       <% end %>
-     <!--  <%= link_to 'New lyric', new_lyric_path %> -->
     </div>
   </div>
 </body>
 </html>
+
+
+
+

@@ -55,16 +55,6 @@
         <a href="../lyrics?search=&artistsearch=y"> Y </a>
         <a href="../lyrics?search=&artistsearch=z"> Z </a><br /><br />
       </div>
-      <% previous_artist = " " %>
-      <% for lyric in @artists -%>
-        <% if previous_artist != lyric.artist %>
-           <h3>
-             <a href="../lyrics/artist?search=&artistsearch=<%=h lyric.artist %>"> <%=h lyric.artist %> </a>
-           </h3>
-         <% end %>  
-         <% previous_artist = lyric.artist %>
-      <% end %>
-     <!--  <%= link_to 'New lyric', new_lyric_path %> -->
     </div>
   </div>
 </body>

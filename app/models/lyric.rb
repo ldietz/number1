@@ -20,4 +20,11 @@ class Lyric < ActiveRecord::Base
       find(:all)
     end
   end
+  def self.titlesearch(titlesearch)
+    if titlesearch
+      find(:all, :conditions => ['title LIKE ?', "#{titlesearch}%"])
+    else
+      find(:all)
+    end
+  end
 end

@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>yrics: <%= controller.action_name %></title>
+</head>
+<body id="store">
+  <div id="banner">
+    <%= image_tag("logobackdrop.png")  %>
+      <% form_tag lyrics_path, :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      </p>
+      <% form_tag lyrics_path, :method => 'get' do %>
+      <% end %>
+      <% end %>
+  </div>
+
+  <div id="columns">
+    <div id="side">
+      <a href="../lyrics/"> Home     </a> <br />
+      <a href="../lyrics/artist">Artist  </a> <br />
+      <%= link_to 'New lyric', new_lyric_path %> <br />
+    </div>
+    <div id="main">
+      <h2> Browse by Artist </h2>
+
+      <div id="artist">
+        <a href="../lyrics?search=&artistsearch=a"> A </a>
+        <a href="../lyrics?search=&artistsearch=b"> B </a>
+        <a href="../lyrics?search=&artistsearch=c"> C </a>
+        <a href="../lyrics?search=&artistsearch=d"> D </a>
+        <a href="../lyrics?search=&artistsearch=e"> E </a>
+        <a href="../lyrics?search=&artistsearch=f"> F </a>
+        <a href="../lyrics?search=&artistsearch=g"> G </a>
+        <a href="../lyrics?search=&artistsearch=h"> H </a>
+        <a href="../lyrics?search=&artistsearch=i"> I </a>
+        <a href="../lyrics?search=&artistsearch=j"> J </a>
+        <a href="../lyrics?search=&artistsearch=k"> K </a>
+        <a href="../lyrics?search=&artistsearch=l"> L </a>
+        <a href="../lyrics?search=&artistsearch=m"> M </a>
+        <a href="../lyrics?search=&artistsearch=n"> N </a>
+        <a href="../lyrics?search=&artistsearch=o"> O </a>
+        <a href="../lyrics?search=&artistsearch=p"> P </a>
+        <a href="../lyrics?search=&artistsearch=q"> Q </a>
+        <a href="../lyrics?search=&artistsearch=r"> R </a>
+        <a href="../lyrics?search=&artistsearch=s"> S </a>
+        <a href="../lyrics?search=&artistsearch=t"> T </a>
+        <a href="../lyrics?search=&artistsearch=u"> U </a>
+        <a href="../lyrics?search=&artistsearch=v"> V </a>
+        <a href="../lyrics?search=&artistsearch=w"> W </a>
+        <a href="../lyrics?search=&artistsearch=x"> X </a>
+        <a href="../lyrics?search=&artistsearch=y"> Y </a>
+        <a href="../lyrics?search=&artistsearch=z"> Z </a><br /><br />
+      </div>
+      <% previous_artist = " " %>
+      <% for lyric in @artists -%>
+        <% if previous_artist != lyric.artist %>
+           <h3>
+             <a href="../lyrics/artist?search=&artistsearch=<%=h lyric.artist %>"> <%=h lyric.artist %> </a>
+           </h3>
+         <% end %>  
+         <% previous_artist = lyric.artist %>
+      <% end %>
+     <!--  <%= link_to 'New lyric', new_lyric_path %> -->
+    </div>
+  </div>
+</body>
+</html>
