@@ -1,5 +1,6 @@
 class LyricsController < ApplicationController
 
+
   # GET /lyrics
   # GET /lyrics.xml
   def index
@@ -76,7 +77,6 @@ class LyricsController < ApplicationController
   # GET /lyrics/new.xml
   def new
     @lyric = Lyric.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @lyric }

@@ -1,15 +1,18 @@
 /* Global styles */
 
 h1 {
-        font:  250% sans-serif;
-        color: #ffffff;
-        border-bottom: 3px dotted #77d;
+  font:  250% sans-serif;
+  color: #ffffff;
+  border-bottom: 3px dotted #77d;
 }
 h2 {
   color: white;
 }
 h3 {
         color: #fff
+}
+p {
+  color: #ffffff;
 }
 body { background-color: #2C2774 }
 pre  { background-color: #2C2774 }
