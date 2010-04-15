@@ -8,7 +8,7 @@
 <body id="store">
   <div id="banner">
     <%= image_tag("logobackdrop.png")  %>
-      <% form_tag lyrics_path, :method => 'get' do %>
+      <% form_tag '/lyrics/search', :method => 'get' do %>
       <p>
         <%= text_field_tag :search, params[:search] %>
         <%= submit_tag "Search", :name => nil %>

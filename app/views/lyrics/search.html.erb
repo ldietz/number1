@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Artists <%= controller.action_name %></title>
+</head>
+<body id="store">
+  <div id="banner">
+    <%= image_tag("logobackdrop.png")  %>
+      <% form_tag '/lyrics/album', :method => 'get' do %>
+      <p>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      <% form_tag lyrics_path, :method => 'get' do %>
+      <% end %>
+    <% end %>
+      <a href="../"> Home </a> &nbsp;
+      <a href="../"> Login </a> &nbsp;
+      <%= link_to 'Submit', new_lyric_path %> <br />
+    </p>
+  </div>
+
+  <div id="columns">
+    <div id="side">
+    </div>
+    <div id="main">
+      <h2> Search Results </h2>
+      <% previous_title = " " %>
+      <h3>
+        Song Title <br />
+      </h3>  
+      <% for lyric in @artistsall -%>
+        <% if previous_title != lyric.title %>
+           <h3>
+             <a href="../lyrics/title?search=&titlesearch=<%=h lyric.title %>"> <%=h lyric.title %> </a>
+           </h3>
+         <% end %>  
+         <% previous_title = lyric.title %>
+      <% end %>
+      <% previous_artist = " " %>
+      <h3>
+        Artists <br />
+      </h3>  
+      <% for lyric in @artistsall -%>
+        <% if previous_artist != lyric.artist %>
+           <h3>
+             <a href="../lyrics/artist?search=&artistsearch=<%=h lyric.artist %>"> <%=h lyric.artist %> </a>
+           </h3>
+         <% end %>  
+         <% previous_artist = lyric.artist %>
+      <% end %>
+      <% previous_album = " " %>
+      <h3>
+        Album <br />
+      </h3>  
+      <% for lyric in @artistsall -%>
+        <% if previous_album != lyric.album %>
+           <h3>
+             <a href="../lyrics/album?search=&albumsearch=<%=h lyric.album %>"> <%=h lyric.album %> </a>
+           </h3>
+         <% end %>  
+         <% previous_album = lyric.album %>
+      <% end %>
+     <!--  <%= link_to 'New lyric', new_lyric_path %> -->
+    </div>
+  </div>
+</body>
+</html>
+

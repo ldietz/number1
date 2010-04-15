@@ -6,6 +6,13 @@ class Lyric < ActiveRecord::Base
       find(:all)
     end
   end
+  def self.searchall(searchall)
+    if searchall
+      find(:all, :conditions => ['title LIKE ?', OR 'album LIKE ?', "#{searchall}%"])
+    else
+      find(:all)
+    end
+  end
    def self.artistsearch(artistsearch)
      if artistsearch
        find(:all, :conditions => ['artist LIKE ?', "#{artistsearch}%"])
@@ -27,4 +34,5 @@ class Lyric < ActiveRecord::Base
       find(:all)
     end
   end
+  
 end

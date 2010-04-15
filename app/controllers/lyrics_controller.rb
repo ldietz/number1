@@ -11,6 +11,17 @@ class LyricsController < ApplicationController
     end
   end
 
+  def search
+    @lyrics = Lyric.search(params[:search])
+    @artists = Lyric.artistsearch(params[:artistsearch])
+    @albums = Lyric.albumsearch(params[:albumsearch])
+    @titles = Lyric.titlesearch(params[:titlesearch])
+    @artistsall = Lyric.searchall(params[:searchall])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @lyrics }
+    end
+  end
   def artistsearch
     @lyrics = Lyric.search(params[:search])
     @artists = Lyric.artistsearch(params[:artistsearch])
