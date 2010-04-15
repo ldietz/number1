@@ -196,12 +196,17 @@ a:hover {
 #banner p {
   text-align: right;
 }
-
+#banner a {
+  font-weight: bold;
+  font-size:x-large;
+}
 #columns {
   background: #2C2774 ;
 }
 #main {
-  margin-left: 25em;
+  width: 550px ;
+  margin-left: auto ;
+  margin-right: auto ;
   padding-top: 4ex;
   padding-left: 2em;
   background: #2C2774;
@@ -223,11 +228,11 @@ a:hover {
   color: #ffffff; text-decoration: underline; 
 }
 #side {
-  float: left;
+  float: right;
   padding-top: 1em;
-  padding-left: 1em;
+  padding-right: 15em;
   padding-bottom: 1em;
-  width: 24em;
+  width: 100 em;
   background: #2C2774;
   line-height: 2;
 }

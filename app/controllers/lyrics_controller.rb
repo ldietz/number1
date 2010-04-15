@@ -43,7 +43,7 @@ class LyricsController < ApplicationController
  def title
    @lyrics = Lyric.search(params[:search])
    @artists = Lyric.artistsearch(params[:artistsearch])
-   @titles = Lyric.titlesearch(params[:artistsearch])
+   @titles = Lyric.titlesearch(params[:titlesearch])
    respond_to do |format|
      format.html # index.html.erb
      format.xml  { render :xml => @lyrics }

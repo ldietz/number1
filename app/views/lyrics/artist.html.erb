@@ -12,15 +12,20 @@
       <p>
         <%= text_field_tag :search, params[:search] %>
         <%= submit_tag "Search", :name => nil %>
-      </p>
+      <% form_tag lyrics_path, :method => 'get' do %>
       <% end %>
+    <% end %>
+      <a href="../"> Home </a> &nbsp;
+      <a href="../"> Login </a> &nbsp;
+      <%= link_to 'Submit', new_lyric_path %> <br />
+    </p>
   </div>
 
   <div id="columns">
     <div id="side">
-      <a href="../lyrics/"> Home     </a> <br />
     </div>
     <div id="main">
+      <h2> Select an Album </h2><br />
       <% previous_album = " " %>
       <% for lyric in @artists -%>
         <% if previous_album != lyric.album %>
@@ -30,7 +35,6 @@
          <% end %>  
          <% previous_album = lyric.album %>
       <% end %>
-     <!--  <%= link_to 'New lyric', new_lyric_path %> -->
     </div>
   </div>
 </body>

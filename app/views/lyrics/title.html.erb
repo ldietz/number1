@@ -12,24 +12,33 @@
       <p>
         <%= text_field_tag :search, params[:search] %>
         <%= submit_tag "Search", :name => nil %>
-      </p>
+      <% form_tag lyrics_path, :method => 'get' do %>
       <% end %>
+    <% end %>
+      <a href="../"> Home </a> &nbsp;
+      <a href="../"> Login </a> &nbsp;
+      <%= link_to 'Submit', new_lyric_path %> <br />
+    </p>
   </div>
 
   <div id="columns">
     <div id="side">
-      <a href="../lyrics/"> Home     </a> <br />
+      <% for lyric in @titles -%>
+        <h2>
+          <%=h lyric.artist %> <br />          
+        </h2>
+        <h3>
+          <%= image_tag(lyric.image_url, :size => "250x250") %> <br />
+          <%=h lyric.album %> &nbsp; (
+          <%=h lyric.year %> )   <br /><br />
+        </h3>
+      <% end %>
     </div>
     <div id="main">
       <% previous_title = " " %>
       <% for lyric in @titles -%>
-        <%= image_tag(lyric.image_url, :size => "250x250") %>
         <h3><%=h lyric.title %></h3>
         <h3>
-          Search:  <%=h lyric.year %> <br />
-          Artist:  <%=h lyric.artist %> <br />
-          Album:   <%=h lyric.album %>  <br />
-          Year:    <%=h lyric.year %>   <br /><br />
           <%= lyric.lyrics %>
         </h3>
       <% end %>

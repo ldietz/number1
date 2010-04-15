@@ -12,48 +12,49 @@
       <p>
         <%= text_field_tag :search, params[:search] %>
         <%= submit_tag "Search", :name => nil %>
-      </p>
       <% form_tag lyrics_path, :method => 'get' do %>
       <% end %>
-      <% end %>
+    <% end %>
+      <a href="../"> Home </a> &nbsp;
+      <a href="../"> Login </a> &nbsp;
+      <%= link_to 'Submit', new_lyric_path %> <br />
+    </p>
   </div>
 
   <div id="columns">
     <div id="side">
-      <a href="../lyrics/"> Home     </a> <br />
-      <a href="../lyrics/artist">Artist  </a> <br />
-      <%= link_to 'New lyric', new_lyric_path %> <br />
     </div>
     <div id="main">
       <h2> Browse by Artist </h2>
 
       <div id="artist">
-        <a href="../lyrics?search=&artistsearch=a"> A </a>
-        <a href="../lyrics?search=&artistsearch=b"> B </a>
-        <a href="../lyrics?search=&artistsearch=c"> C </a>
-        <a href="../lyrics?search=&artistsearch=d"> D </a>
-        <a href="../lyrics?search=&artistsearch=e"> E </a>
-        <a href="../lyrics?search=&artistsearch=f"> F </a>
-        <a href="../lyrics?search=&artistsearch=g"> G </a>
-        <a href="../lyrics?search=&artistsearch=h"> H </a>
-        <a href="../lyrics?search=&artistsearch=i"> I </a>
-        <a href="../lyrics?search=&artistsearch=j"> J </a>
-        <a href="../lyrics?search=&artistsearch=k"> K </a>
-        <a href="../lyrics?search=&artistsearch=l"> L </a>
-        <a href="../lyrics?search=&artistsearch=m"> M </a>
-        <a href="../lyrics?search=&artistsearch=n"> N </a>
-        <a href="../lyrics?search=&artistsearch=o"> O </a>
-        <a href="../lyrics?search=&artistsearch=p"> P </a>
-        <a href="../lyrics?search=&artistsearch=q"> Q </a>
-        <a href="../lyrics?search=&artistsearch=r"> R </a>
-        <a href="../lyrics?search=&artistsearch=s"> S </a>
-        <a href="../lyrics?search=&artistsearch=t"> T </a>
-        <a href="../lyrics?search=&artistsearch=u"> U </a>
-        <a href="../lyrics?search=&artistsearch=v"> V </a>
-        <a href="../lyrics?search=&artistsearch=w"> W </a>
-        <a href="../lyrics?search=&artistsearch=x"> X </a>
-        <a href="../lyrics?search=&artistsearch=y"> Y </a>
-        <a href="../lyrics?search=&artistsearch=z"> Z </a><br /><br />
+        <a href="../lyrics/artistsearch?search=&artistsearch=a"> A </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=b"> B </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=c"> C </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=d"> D </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=e"> E </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=f"> F </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=g"> G </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=h"> H </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=i"> I </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=j"> J </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=k"> K </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=l"> L </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=m"> M </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=n"> N </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=o"> O </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=p"> P </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=q"> Q </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=r"> R </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=s"> S </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=t"> T </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=u"> U </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=v"> V </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=w"> W </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=x"> X </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=y"> Y </a>
+        <a href="../lyrics/artistsearch?search=&artistsearch=z"> Z </a>
+        <br /><br />
       </div>
       <% previous_artist = " " %>
       <% for lyric in @artists -%>
