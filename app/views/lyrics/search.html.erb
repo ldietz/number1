@@ -30,7 +30,7 @@
       <h3>
         Song Title <br />
       </h3>  
-      <% for lyric in @artistsall -%>
+      <% for lyric in @titles -%>
         <% if previous_title != lyric.title %>
            <h3>
              <a href="../lyrics/title?search=&titlesearch=<%=h lyric.title %>"> <%=h lyric.title %> </a>
@@ -42,7 +42,7 @@
       <h3>
         Artists <br />
       </h3>  
-      <% for lyric in @artistsall -%>
+      <% for lyric in @artists -%>
         <% if previous_artist != lyric.artist %>
            <h3>
              <a href="../lyrics/artist?search=&artistsearch=<%=h lyric.artist %>"> <%=h lyric.artist %> </a>
@@ -54,7 +54,7 @@
       <h3>
         Album <br />
       </h3>  
-      <% for lyric in @artistsall -%>
+      <% for lyric in @albums -%>
         <% if previous_album != lyric.album %>
            <h3>
              <a href="../lyrics/album?search=&albumsearch=<%=h lyric.album %>"> <%=h lyric.album %> </a>
