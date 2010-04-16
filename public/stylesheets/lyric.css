@@ -207,11 +207,11 @@ a:hover {
   background: #2C2774 ;
 }
 #main {
-  width: 300px;
+  width: 550px;
   margin-left: auto ;
   margin-right: auto ;
   padding-top: 4ex;
-  padding-left: 2em;
+  padding-left: 20em;
   background: #2C2774;
 }
 #artist {
@@ -233,10 +233,10 @@ a:hover {
 #side {
   float: right; 
   padding-top: 1em;
-  padding-right: 15em;
+  padding-right: 8em;
   padding-left: 1em:
   padding-bottom: 1em;
-  width: 15em;
+  width: 25em;
   background: #2C2774;
   line-height: 2;
 }
@@ -248,7 +248,24 @@ a:hover {
   color: white ;
   font-size: xx-large;
 }
-
+#mainleft {
+  float: left; 
+  margin-left: 35em;
+  width: 20em;
+  background: #2C2774;
+}
+#mainmiddle {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20em;
+  background: #2C2774;
+}
+#mainright {
+  float: right; 
+  margin-right: 20em;
+  width: 20em;
+  background: #2C2774;
+}
 #store .entry form, #store .entry form div {
   display: inline;
 }

@@ -8,7 +8,7 @@ class Lyric < ActiveRecord::Base
   end
   def self.searchall(searchall)
     if searchall
-      find(:all, :conditions => ['artist LIKE ?', "#{searchall}%"])  
+      find(:all, :conditions => ['artist LIKE ? OR album LIKE ? OR title LIKE ?', "#{searchall}%",  "#{searchall}%",  "#{searchall}%" ])  
     else
       find(:all)
     end
@@ -17,7 +17,7 @@ class Lyric < ActiveRecord::Base
      if artistsearch
        find(:all, :conditions => ['artist LIKE ?', "#{artistsearch}%"])
      else
-       find(:all)
+     
      end
    end
   def self.albumsearch(albumsearch)
@@ -42,7 +42,7 @@ class Lyric < ActiveRecord::Base
   private
 
   def find_searchlyrics
-    @lyrics.find(:all, :conditions => conditions)
+    searchlyric.find(:all, :conditions => conditions)
   end
 
   def keyword_conditions
@@ -50,7 +50,7 @@ class Lyric < ActiveRecord::Base
   end
 
   def category_conditions
-    ["lyrics.category_id = ?", category_id] unless category_id.blank?
+    ["lyrics.artist = ?", ] unless artist.blank?
   end
 
   def conditions

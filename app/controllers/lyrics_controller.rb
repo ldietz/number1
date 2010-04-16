@@ -87,7 +87,6 @@ class LyricsController < ApplicationController
   def edit
     @lyric = Lyric.find(params[:id])
   end
-
   # POST /lyrics
   # POST /lyrics.xml
   def create

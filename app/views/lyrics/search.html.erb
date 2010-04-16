@@ -8,9 +8,9 @@
 <body id="store">
   <div id="banner">
     <%= image_tag("logobackdrop.png")  %>
-      <% form_tag '/lyrics/album', :method => 'get' do %>
+      <% form_tag '/lyrics/search', :method => 'get' do %>
       <p>
-        <%= text_field_tag :search, params[:search] %>
+        <%= text_field_tag :searchall, params[:searchall] %>
         <%= submit_tag "Search", :name => nil %>
       <% form_tag lyrics_path, :method => 'get' do %>
       <% end %>
@@ -22,53 +22,48 @@
   </div>
 
   <div id="columns">
-    <div id="side">
-    </div>
-    <div id="main">
-
-
-
-
-
-<!--
-      <h2> Search Results </h2>
-      <% previous_title = " " %>
-      <h3>
-        Song Title <br />
-      </h3>  
-      <% for lyric in @lyrics -%>
+      <div id="mainleft">
+        <h2> Search Results </h2>
+        <% previous_title = " " %>
+        <h3>
+          Songs <br />
+        </h3>  
+        <% for lyric in @artistsall -%>
         <% if previous_title != lyric.title %>
-           <h3>
-             <a href="../lyrics/title?search=&titlesearch=<%=h lyric.title %>"> <%=h lyric.title %> </a>
-           </h3>
-         <% end %>  
+          <h3>
+            <a href="../lyrics/title?search=&titlesearch=<%=h lyric.title %>"> <%=h lyric.title %> </a>
+          </h3>
+       <% end %>  
+     </div>
+     <div id="mainmiddle">
          <% previous_title = lyric.title %>
       <% end %>
-      <% previous_artist = " " %>
-      <h3>
-        Artists <br />
-      </h3>  
-      <% for lyric in @lyrics -%>
+        <% previous_artist = " " %>
+        <h3>
+          Artists <br />
+        </h3>  
+        <% for lyric in @artistsall -%>
         <% if previous_artist != lyric.artist %>
-           <h3>
-             <a href="../lyrics/artist?search=&artistsearch=<%=h lyric.artist %>"> <%=h lyric.artist %> </a>
-           </h3>
-         <% end %>  
-         <% previous_artist = lyric.artist %>
-      <% end %>
-      <% previous_album = " " %>
-      <h3>
-        Album <br />
-      </h3>  
-      <% for lyric in @lyrics -%>
+          <h3>
+            <a href="../lyrics/artist?search=&artistsearch=<%=h lyric.artist %>"> <%=h lyric.artist %> </a>
+          </h3>
+        <% end %>
+      </div>
+      <div id="mainright">
+        <% previous_artist = lyric.artist %>
+        <% end %>
+        <% previous_album = " " %>
+        <h3>
+          Album <br />
+        </h3>  
+        <% for lyric in @artistsall -%>
         <% if previous_album != lyric.album %>
-           <h3>
-             <a href="../lyrics/album?search=&albumsearch=<%=h lyric.album %>"> <%=h lyric.album %> </a>
-           </h3>
-         <% end %>  
-         <% previous_album = lyric.album %>
+          <h3>
+            <a href="../lyrics/album?search=&albumsearch=<%=h lyric.album %>"> <%=h lyric.album %> </a>
+          </h3>
+        <% end %>  
+        <% previous_album = lyric.album %>
       <% end %>
-     <!--  <%= link_to 'New lyric', new_lyric_path %> --> -->
     </div>
   </div>
 </body>
