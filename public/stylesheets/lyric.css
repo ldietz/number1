@@ -1,5 +1,11 @@
 /* Global styles */
 
+#container {
+	margin: 0px auto;
+	text-align: left;
+	width: 1050px;
+}
+
 h1 {
   font:  250% sans-serif;
   color: #ffffff;
@@ -7,15 +13,32 @@ h1 {
 }
 h2 {
   color: white;
+  font-size: large;
 }
 h3 {
+        color: #fff
+}
+h4 {
+        color: #fff
+}
+h5 {
         color: #fff
 }
 p {
   color: #ffffff;
 }
-body { background-color: #2C2774 }
-pre  { background-color: #2C2774 }
+body {
+  background-color: #2C2774;
+  text-align: center;
+
+ }
+pre  {
+  font-size: medium;
+  background-color:   #a68926;
+}
+a {
+  font-size: medium;
+}
 
 a:link {
   color: #ffffff; text-decoration: underline; 
@@ -31,191 +54,72 @@ a:hover {
 }
 /* Styles for lyrics/index */
 
-#lyric  a {
-  font-color:white;
-  font-size:large;
-}
-
-#lyric-list table {
-        border-collapse: collapse;
-}
-
-#lyric-list table tr td {
-        padding: 5px;
-        vertical-align: top;
-}
-
-
-#lyric-list .list-image {
-  width:        60px;
-  height:       70px;
-}
-
-#lyric-list .list-description {
-  width:        60%;
-  color:       #fff
-}
-
-#lyric-list .list-description dl {
-        margin: 0;
-}
-
-#lyric-list .list-description dt {
-	color:        #282;
-	font-weight:  bold;
-	font-size:    larger;
-}
-
-#lyric-list .list-description dd {
-        margin: 0;
-}
-
-#lyric-list .list-actions {
-  font-size:    x-small;
-  text-align:   right;
-  padding-left: 1em;
-}
-
-#lyric-list .list-line-even {
-  background:   #e0f8f8;
-}
-
-#lyric-list .list-line-odd {
-  background:   #f8b0f8;
-}
-
-#lyric .entry {
-  overflow: auto;
-  margin-top: 1em;
-  border-bottom: 1px dotted #77d;
-}
-
-
-#lyric .entry h3 {
- margin-top: 0;
- margin-bottom: 2px;
- color: #000000;
-}
-
-/* An entry in the store catalog 
-
-#store  .entry {
-  overflow: auto;
-  margin-top: 1em;
-  border-bottom: 1px dotted #77d;
-}
-
-#store  .title {
-  font-size: 120%;
-  font-family: sans-serif;
-}
-
-#store .entry img {
-  width: 75px;
-  float: left;
-}
-
-
-#store .entry h3 {
- margin-top: 0;
- margin-bottom: 2px;
- color: #227;
-}
-
-#store .entry p {
- margin-top: 0.5em; 
- margin-bottom: 0.8em; 
-}
-
-#store .entry .price-line {
- clear: both;
-}
-
-#store .entry .add-to-cart {
-  position: relative;
-}
-
-#store .entry  .price {
-  color: #44a;
-  font-weight: bold;
-  margin-right: 2em;
-}
-*/
-/* The error box */
-
-.fieldWithErrors {
-  padding: 2px;
-  background-color: #EEFFEE;
-  display: inline;
-}
-
-.fieldWithErrors * {
-  background-color: red;
-}
-
-#errorExplanation {
-  width: 400px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#errorExplanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #c00;
-  color: #fff;
-}
-
-#errorExplanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 5px;
-}
-
-#errorExplanation ul li {
-  font-size: 12px;
-  list-style: square;
-}
 
 /* Styles for main page */
+
 #banner {
-  background: #2c2774 ;
+  background: #2C2774 ;
   padding-top: 10px;
-  padding-bottom: 10px;
+
   border-bottom: 2px solid;
-  font: small-caps 40px/40px "Times New Roman", serif;
+  font:  small-caps 40px/40px "Times New Roman", serif;
   color: #625835 ;
   text-align: center;
 }
 #banner img {
+  width: 604px;
+  margin-left: auto;
+  margin-right: auto;
   float: center;
-}
-#banner p {
-  text-align: right;
 }
 #banner a {
   font-weight: bold;
-  font-size:x-large;
+  font-size:large;
 }
 #columns {
-  background: #2C2774 ;
-}
-#main {
-  width: 550px;
-  margin-left: auto ;
-  margin-right: auto ;
-  padding-top: 4ex;
-  padding-left: 20em;
   background: #2C2774;
 }
+#columns a {
+  font-size: small;
+}
+#main {
+  background: url(../images/backgroundmain.png);
+  width:      600px;
+  margin-left: auto ;
+  margin-right: auto ;
+  padding-top: 20px;
+  text-align:center;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  color:      #000 ;
+}
+#topbackground {
+	background: url(../images/topbackgroundmain.png);
+	width:      604px;
+	height:     30px;
+    margin-left:auto;
+    margin-right: auto;
+	position:   relative;
+}
+#bottombackground {
+	background: url(../images/bottombackgroundmain.png);
+	width:      604px;
+	height:     42px;
+    margin-left:auto;
+    margin-right: auto;
+	clear:      both;
+}
+#mainmid {
+  background: url(../images/backgroundmain.png);
+  width:      600px;
+  overflow:   wrap;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 #artist {
-  font-color: white ;
+  font-color: white;
   font-size: large;  
 }
 #artist a:link {
@@ -231,14 +135,11 @@ a:hover {
   color: #ffffff; text-decoration: underline; 
 }
 #side {
-  float: right; 
-  padding-top: 1em;
-  padding-right: 8em;
-  padding-left: 1em:
-  padding-bottom: 1em;
-  width: 25em;
+  float:      right; 
   background: #2C2774;
-  line-height: 2;
+  width:      180px;
+  margin-top:10px;
+  overflow: auto;
 }
 #side a {
   color: white ;
@@ -249,51 +150,56 @@ a:hover {
   font-size: xx-large;
 }
 #mainleft {
-  float: left; 
-  margin-left: 35em;
-  width: 20em;
-  background: #2C2774;
-}
-#mainmiddle {
-  margin-left: auto;
-  margin-right: auto;
-  width: 20em;
+  float:      left;
+  width:      200px;
+  margin-left: 190px ;
+  display:    inline;
+  margin-top: 6px;
   background: #2C2774;
 }
 #mainright {
-  float: right; 
-  margin-right: 20em;
-  width: 20em;
+  float:      right;
+  width:      250px;
+  margin-right: 90px;
+  padding-top: 6px;
+  margin-top: 19px;
   background: #2C2774;
+}
+#mainmiddle {
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto; 
+  width:      600px;
+  text-align: center;
 }
 #store .entry form, #store .entry form div {
   display: inline;
 }
 
 #notice {
-  border: 2px solid red;
+  border:  2px solid red;
   padding: 1em;
   margin-bottom: 2em;
   background-color: #f0f0f0;
-  font: bold smaller sans serif;
+  font:    bold smaller sans serif;
 }
 
-/*Styles for the main page cart*/
-
-.cart-title {
-  font: 120% bold;
+#bannerside {
+  float:      right;
+  margin-bottom: 10px;
+  background: #2C2774;
+  width: 300px;
 }
 
-.item.price, .total-line {
-  text-align: right;
+#bannermiddle {
+  margin-left: auto;
+  margin-right: auto; 
+  width: 300px;
+  text-align: center;
+  margin-top: 15px;
+  background: #2C2774;
+  margin-bottom: 10px; 
 }
-
-.total-line, .total-cell {
-  font-weight: bold
-  border-top: 1px solid #595;
-}
-
-
 
 
 

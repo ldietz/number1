@@ -1,17 +1,5 @@
 <h1>New lyric</h1>
 
-  <% form_for @lyric do |f| %>
-  <p>
-    <%= f.label :artist %> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    <%= f.label "Options" %><br />
-    <%= f.text_field :artist %> 
-    <%= f.collection_select :artist, Lyric.all, :id, :title, :include_blank => true %>
-    <%= f.submit "Search" %>
-    </p>
-  <% end %>
-
-
-
 <% form_for(@lyric) do |f| %>
   <%= f.error_messages %>
 

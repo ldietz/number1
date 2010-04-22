@@ -1,32 +1,34 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>yrics: <%= controller.action_name %></title>
+  <title>LyricMesh</title>
 </head>
-<body id="store">
+<body>
+<div id="container">
   <div id="banner">
     <%= image_tag("logobackdrop.png")  %>
+    <p>
+      <div id="bannerside">
       <% form_tag '/lyrics/search', :method => 'get' do %>
-      <p>
-        <%= text_field_tag :search, params[:search] %>
+        <%= text_field_tag :searchall, params[:searchall] %>
         <%= submit_tag "Search", :name => nil %>
-      <% form_tag lyrics_path, :method => 'get' do %>
       <% end %>
-    <% end %>
+      </div>
+      <div id="bannermiddle">
       <a href="../"> Home </a> &nbsp;
-      <a href="../"> Login </a> &nbsp;
+      <a href="../lyrics/video"> Videos </a> &nbsp;
       <%= link_to 'Submit', new_lyric_path %> <br />
+      </div>
     </p>
   </div>
 
   <div id="columns">
-    <div id="side">
+    <div id="topbackground">
     </div>
     <div id="main">
       <h2> Browse by Artist </h2>
-
+      
       <div id="artist">
         <a href="../lyrics/artistsearch?search=&artistsearch=a"> A </a>
         <a href="../lyrics/artistsearch?search=&artistsearch=b"> B </a>
@@ -57,29 +59,9 @@
         <br /><br />
       </div>
     </div>
+ <div id="bottombackground">
+    </div>
   </div>
+</div>
 </body>
 </html>
-
-
-
-
-<!--
-
- <% for lyric in @lyrics -%>
-        <%= image_tag(lyric.image_url, :size => "250x250") %>
-        <h3><%=h lyric.title %></h3>
-        <h3>
-          Search:  <%=h lyric.year %> <br />
-          Artist:  <%=h lyric.artist %> <br />
-          Album:   <%=h lyric.album %>  <br />
-          Year:    <%=h lyric.year %>   <br /><br />
-          <%= lyric.lyrics %>
-        </h3>
-        <td><%= link_to 'Show', lyric %></td>
-        <td><%= link_to 'Edit', edit_lyric_path(lyric) %></td>
-        <td><%= link_to 'Destroy', lyric, :confirm => 'Are you sure?', :method => :delete %></td>
-        <br />
-      <% end %>
-
--->
