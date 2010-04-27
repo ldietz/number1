@@ -33,8 +33,8 @@ class LyricsController < ApplicationController
     end
   end
   def artistsearch
-    @lyrics = Lyric.search(params[:search])
-    @artists = Lyric.artistsearch(params[:artistsearch])
+    @lyrics = Song.search_title(params[:search])
+    @artists = Artist.search_name(params[:search])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @lyrics }
@@ -43,8 +43,10 @@ class LyricsController < ApplicationController
 
   
   def artist
-    @lyrics = Lyric.search(params[:search])
-    @artists = Lyric.artistsearch(params[:artistsearch])
+    @lyrics = Song.search_title(params[:search])
+    @artists = Artist.search_name(params[:search])
+    @albums = Album.search_title(params[:search])
+    @artistsall = Lyric.searchall(params[:searchall])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @lyrics }

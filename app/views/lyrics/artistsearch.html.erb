@@ -61,12 +61,12 @@
       </div>
       <% previous_artist = " " %>
       <% for lyric in @artists -%>
-        <% if previous_artist != lyric.artist %>
+        <% if previous_artist != lyric.name %>
            <h3>
-             <a href="../lyrics/artist?search=&artistsearch=<%=h lyric.artist %>"> <%=h lyric.artist %> </a>
+             <a href="../lyrics/artist?search=&artistsearch=<%=h lyric.name %>"> <%=h lyric.name %> </a>
            </h3>
          <% end %>  
-         <% previous_artist = lyric.artist %>
+         <% previous_artist = lyric.name %>
       <% end %>
       <br/ ><br />
     </div>

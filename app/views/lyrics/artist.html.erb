@@ -16,6 +16,12 @@
         <%= submit_tag "Search", :name => nil %>
       <% form_tag lyrics_path, :method => 'get' do %>
       <% end %>
+      <% form_tag '/lyrics', :method => 'get' do %>
+        <%= text_field_tag :search_name, params[:search] %>
+        <%= submit_tag "SearchAll", :name => nil %>
+      <% form_tag lyrics_path, :method => 'get' do %>
+      <% end %>
+      <% end %>
     </p>
       </div>
     <% end %>
@@ -32,13 +38,13 @@
     <div id="mainmid">
       <h2> Select an Album </h2><br />
       <% previous_album = " " %>
-      <% for lyric in @artists -%>
-        <% if previous_album != lyric.album %>
+      <% for lyric in @artistall -%>
+        <% if previous_album != lyric.title %>
            <h3>
-             <a href="../lyrics/album?search=&albumsearch=<%=h lyric.album %>"> <%=h lyric.album %> </a>
+             <a href="../lyrics/album?search=&albumsearch=<%=h lyric.title %>"> <%=h lyric.title %> </a>
            </h3>
          <% end %>  
-         <% previous_album = lyric.album %>
+         <% previous_album = lyric.title %>
       <% end %>
       <br /><br />
     </div>
