@@ -13,7 +13,6 @@ class Song < ActiveRecord::Base
   define_index do
     indexes title
     indexes lyrics
-    
   end
   
 end

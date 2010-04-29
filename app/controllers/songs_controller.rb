@@ -1,7 +1,5 @@
 class SongsController < ApplicationController
-  def index
-    # @songs = Song.search(params[:search])
-    # @titles = Song.title(params[:title])
+  def index    
     @browse = Song.browse params[:browse]
     respond_to do |format|
       format.html # index.html.erb
@@ -19,7 +17,10 @@ class SongsController < ApplicationController
     end
   end
   
-  def show
+ def show
+    @artists = Artist.find(:all)
+    @albums = Album.find(:all) 
+    # @songs = Song.search params[:search]
     @songs = Song.find(params[:id])
     
     respond_to do |format|

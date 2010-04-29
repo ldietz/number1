@@ -159,19 +159,20 @@ a:hover {
 }
 #mainleft {
   float:      left;
-  width:      200px;
-  margin-left: 190px ;
-  display:    inline;
-  margin-top: 6px;
-  background: #2C2774;
+  width:      350px;
+  padding-left: 50px;
+  
 }
 #mainright {
   float:      right;
-  width:      250px;
-  margin-right: 90px;
-  padding-top: 6px;
-  margin-top: 19px;
-  background: #2C2774;
+  width:      150px;
+  padding-right: 50px;
+}
+#splitmainback {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 604px;
 }
 #mainmiddle {
   padding-top: 10px;
