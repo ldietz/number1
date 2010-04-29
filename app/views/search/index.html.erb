@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Artists <%= controller.action_name %></title>
+</head>
+<body>
+<div id="container">
+  <div id="banner">
+    <%= image_tag("logobackdrop.png")  %>
+    <p>
+      <div id="bannerside">
+      <% form_tag '/search', :method => 'get' do %>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+      <% form_tag lyrics_path, :method => 'get' do %>
+      <% end %>
+    </p>
+      </div>
+    <% end %>
+      <div id="bannermiddle">
+      <a href="../"> Home </a> &nbsp;
+      <a href="../lyrics/video"> Videos </a> &nbsp;
+      <%= link_to 'Submit', new_lyric_path %> <br />
+      </div>
+  </div>
+
+  <div id="columns">
+  <div id="topbackground">
+  </div>
+    <div id="mainmid">
+      <h2> Select an Song </h2><br />
+      <% previous_song = " " %>
+      <% for song in @songs -%>
+        <% if previous_song != song.title %>
+        <%  album_find = song.album_id %>
+        <%  artist_find = @albums[album_find-1].artist_id %>
+        <%  print_artist =  @artists[artist_find-1].name %>
+           <h3>
+             <a href="../songs/<%=h song.id %>"> <%=h song.title %> </a>
+             &nbsp; &nbsp; (
+             <a href="../artists?artist=<%=h print_artist %>"> <%=h print_artist %> </a> )
+           </h3>
+         <% end %>  
+         <% previous_song = song.title %>
+      <% end %>
+    </div>
+      <br /><br />
+
+  <div id="bottombackground">
+    <p>
+      All lyrics are property and copyright of their owners. All lyrics provided for educational purposes only.<br />
+      If you are the owner of a copyright and would like to have the content removed, please contact dietzl@lyricmesh.com<br />
+      Copyright © 2010 Lyricmesh.com
+    </p>
+  </div>
+  </div>
+</div>
+</body>
+</html>

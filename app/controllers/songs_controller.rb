@@ -1,6 +1,18 @@
 class SongsController < ApplicationController
   def index
-    @songs = Song.search(params[:search])
+    # @songs = Song.search(params[:search])
+    # @titles = Song.title(params[:title])
+    @browse = Song.browse params[:browse]
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @artist }
+    end
+  end
+
+ def search
+    # @songs = Song.search(params[:search])
+    # @titles = Song.title(params[:title])
+    @songs = Song.search params[:search]
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @artist }

@@ -2,9 +2,9 @@
 #   gem install sqlite3-ruby (not necessary on OS X Leopard)
 development:
   adapter: mysql
-  database: mysql
+  database: lyricsmesh
   username: root
-  password:
+  password: anuttuna
   host: localhost
  
 
@@ -19,8 +19,7 @@ test:
 
 production:
   adapter: mysql
-  database: lyricsmesh_prod
-  username: root
-  password:
-  host: localhost
-  socket: /tmp/mysql.sock
+  database: lyricsmesh
+  username: dietzl
+  password: anuttuna
+  host: mysql.lyricmesh.com

@@ -11,8 +11,8 @@
     <%= image_tag("logobackdrop.png")  %>
     <p>
       <div id="bannerside">
-      <% form_tag '/lyrics/search', :method => 'get' do %>
-        <%= text_field_tag :searchall, params[:searchall] %>
+      <% form_tag '/search', :method => 'get' do %>
+        <%= text_field_tag :search, params[:search] %>
         <%= submit_tag "Search", :name => nil %>
       <% form_tag lyrics_path, :method => 'get' do %>
       <% end %>
@@ -32,7 +32,7 @@
     <div id="mainmid">
       <h2> Select an Song </h2><br />
       <% previous_song = " " %>
-      <% for song in @songs -%>
+      <% for song in @browse -%>
         <% if previous_song != song.title %>
            <h3>
              <a href="../songs/<%=h song.id %>"> <%=h song.title %> </a>

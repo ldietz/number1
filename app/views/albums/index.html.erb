@@ -11,11 +11,11 @@
     <%= image_tag("logobackdrop.png")  %>
     <p>
       <div id="bannerside">
-      <% form_tag '/lyrics/search', :method => 'get' do %>
-        <%= text_field_tag :searchall, params[:searchall] %>
+        <% form_tag '/search', :method => 'get' do %>
+        <%= text_field_tag :search, params[:search] %>
         <%= submit_tag "Search", :name => nil %>
-      <% form_tag lyrics_path, :method => 'get' do %>
-      <% end %>
+        <% form_tag lyrics_path, :method => 'get' do %>
+        <% end %>
     </p>
       </div>
     <% end %>
@@ -35,7 +35,7 @@
       <% for album in @albums -%>
         <% if previous_album != album.album %>
            <h3>
-             <a href="../songs?search=<%=h album.id %>"> <%=h album.album %> </a>
+             <a href="../songs?browse=<%=h album.id %>"> <%=h album.album %> </a>
            </h3>
          <% end %>  
          <% previous_album = album.album %>

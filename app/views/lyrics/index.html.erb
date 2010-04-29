@@ -10,10 +10,10 @@
     <%= image_tag("logobackdrop.png")  %>
     <p>
       <div id="bannerside">
-      <% form_tag '/lyrics/search', :method => 'get' do %>
-        <%= text_field_tag :searchall, params[:searchall] %>
+        <% form_tag '/search', :method => 'get' do %>
+        <%= text_field_tag :search, params[:search] %>
         <%= submit_tag "Search", :name => nil %>
-      <% end %>
+        <% end %>
       </div>
       <div id="bannermiddle">
       <a href="../"> Home </a> &nbsp;
@@ -30,7 +30,7 @@
       <h2> Browse by Artist </h2>
       <div id="artist">
         <% for a in 'a'..'z' %>
-        <a href="../artists?search=<%= a %>"><%= a.upcase %> </a>
+        <a href="../artists?artist=<%= a %>"><%= a.upcase %> </a>
         <% end %>
         <br /><br />
       </div>

@@ -4,8 +4,8 @@ class LyricsController < ApplicationController
   # GET /lyrics
   # GET /lyrics.xml
   def index
-    @lyrics = Lyric.search(params[:search])
-    @artists = Lyric.artistsearch(params[:artistsearch])
+  #  @lyrics = Lyric.search(params[:search])
+  #  @artists = Lyric.artistsearch(params[:artistsearch])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @lyrics }

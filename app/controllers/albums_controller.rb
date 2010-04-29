@@ -1,6 +1,6 @@
 class AlbumsController < ApplicationController
   def index
-    @albums = Album.search_title(params[:search])
+    @albums = Album.search_title(params[:album])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @artist }

@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
   def index
-    @artists = Artist.search_name(params[:search])
+    @artists = Artist.search_name(params[:artist])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @artist }
